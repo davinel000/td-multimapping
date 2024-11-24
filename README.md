@@ -26,8 +26,10 @@ The Multibeamer module consolidates all settings needed for a projector setup. I
    - Navigate to the **"New"** tab.
    - Enter the project name and specify the number of projectors used in your setup.
    - Click **Create**. A new folder will be generated in the `/mapping_settings` directory with all necessary configuration files. The message "Project is ready to use" will confirm the successful setup.
+  
+![New tab](./screenshots/multimapping (1).png)
 
-3. **Setting Resolution and Beamer Layout:**
+4. **Setting Resolution and Beamer Layout:**
    - Open the **"Res"** tab and configure:
      - **Fit to Resolution:** Matches your content's width and height to the projector layout. Ensure your content resolution aligns with this setting.
      - **Beamers in a Row:** For a single line, set the total number of projectors. For grids, specify the number of projectors per row (e.g., 3 for a 3x2 grid).
@@ -36,7 +38,9 @@ The Multibeamer module consolidates all settings needed for a projector setup. I
        - A 3x2 grid = `5760x2160`.
      - **Justify Horizontal/Vertical:** Aligns content based on your system's screen configuration. By default, it's **Right Top**, so ensure your control screen is positioned left (and lower, if applicable) relative to your layout.
 
-4. **Mask, Settings, Calibration:**
+![Res tab](./screenshots/multimapping (2).png)
+
+5. **Mask, Settings, Calibration:**
    - Open the **"General"** tab:
      - View project info: Number of projectors, project name, and resolution.
      - Toggle mapping/warping and apply custom masks (ensure mask resolution matches your content).
@@ -44,16 +48,22 @@ The Multibeamer module consolidates all settings needed for a projector setup. I
      - Use the lower module area to view the projector layout, with optional **Show Numbers** for alignment verification.
      - Add a full grid (visible on all screens) or Stoner grid (visible while using Stoner) for fine-tuning image corrections.
 
-5. **Keystoning:**
+![General tab](./screenshots/multimapping (5).png)
+
+6. **Keystoning:**
    - Access the tabs for each projector (e.g., **B1**, **B2**, ..., **BN**).
    - Adjust:     
      - Open the **Stoner** interface for keystone and warp adjustments using mouse or keyboard for precision.
      - Save settings after finishing adjustments for each projector.
      - Disable calibration, grids, or numbers once setup is complete.
      - **Premapping Transform:** Useful for strongly overlapping projectors; manually set scale, translation, and rotation.
+    
+![Beamer tab](./screenshots/multimapping (4).png)
 
-6. **Opening Previously Saved Mapping:**
+7. **Opening Previously Saved Mapping:**
    - Go to the **"Open"** tab, click the **+** button, and select a saved project folder. Ensure it contains all necessary projector folders (e.g., `Beamer1`, `Beamer2`, ...). Press **Load**. The message "Project is ready to use" confirms successful loading.
+
+![Open tab](./screenshots/multimapping (3).png)
 
 ---
 
