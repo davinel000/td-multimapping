@@ -5,7 +5,6 @@ TD-Multimapping is a TouchDesigner module designed for advanced keystoning and w
 - Save and load mapping projects, reducing storage requirements for UV-maps.
 - Overlay masks and alignment grids for precise image adjustments.
 - Apply additional shift and scaling transformations.
-- Trigger operations via hotkeys and partially sync settings with updated versions of Stoner.
 
 Currently, **hard-edge blending** is supported for edge alignment. **Soft-edge blending** is planned for a future version, either as an update to this module or a higher-level implementation. The module will also migrate to a unified Python script and extensions structure in upcoming updates.
 
@@ -21,12 +20,12 @@ The Multibeamer module consolidates all settings needed for a projector setup. I
 ### Steps to Set Up
 
 1. **Open the Multibeamer Parameters Window:**
-   - Use the default hotkey `Ctrl+F8` to open the parameters window.
+   - Use the default hotkey `Ctrl+Shift+M` to open the parameters window.
 
 2. **Creating a Mapping Project:**
    - Navigate to the **"New"** tab.
    - Enter the project name and specify the number of projectors used in your setup.
-   - Click **Create**. A new folder will be generated in the `/mapping_settings` directory with all necessary configuration files. The message "Project is ready to use" will confirm successful setup.
+   - Click **Create**. A new folder will be generated in the `/mapping_settings` directory with all necessary configuration files. The message "Project is ready to use" will confirm the successful setup.
 
 3. **Setting Resolution and Beamer Layout:**
    - Open the **"Res"** tab and configure:
@@ -41,24 +40,24 @@ The Multibeamer module consolidates all settings needed for a projector setup. I
    - Open the **"General"** tab:
      - View project info: Number of projectors, project name, and resolution.
      - Toggle mapping/warping and apply custom masks (ensure mask resolution matches your content).
-     - Activate **Show Calibration Mode** for color adjustments.
+     - Activate **Show Calibration** preview for color adjustments.
      - Use the lower module area to view the projector layout, with optional **Show Numbers** for alignment verification.
-     - Add a full grid or Stoner grid for fine-tuning image corrections.
+     - Add a full grid (visible on all screens) or Stoner grid (visible while using Stoner) for fine-tuning image corrections.
 
 5. **Keystoning:**
    - Access the tabs for each projector (e.g., **B1**, **B2**, ..., **BN**).
-   - Adjust:
-     - **Premapping Transform:** Useful for overlapping projectors; manually set scale, translation, and rotation.
+   - Adjust:     
      - Open the **Stoner** interface for keystone and warp adjustments using mouse or keyboard for precision.
      - Save settings after finishing adjustments for each projector.
      - Disable calibration, grids, or numbers once setup is complete.
+     - **Premapping Transform:** Useful for strongly overlapping projectors; manually set scale, translation, and rotation.
 
 6. **Opening Previously Saved Mapping:**
    - Go to the **"Open"** tab, click the **+** button, and select a saved project folder. Ensure it contains all necessary projector folders (e.g., `Beamer1`, `Beamer2`, ...). Press **Load**. The message "Project is ready to use" confirms successful loading.
 
 ---
 
-## Beamer Layout Setup
+## Notes on Beamer Layout Setup
 
 1. **Configure Screen Grid:**
    - Use Windows Display Settings or Nvidia Device Manager for layout setup (linear or grid).
