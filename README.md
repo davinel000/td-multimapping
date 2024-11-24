@@ -19,10 +19,14 @@ The Multibeamer module consolidates all settings needed for a projector setup. I
 
 ### Steps to Set Up
 
-1. **Open the Multibeamer Parameters Window:**
+1. **Add the Tox File and Connect Inputs:**
+   - Add the provided `.tox` file to your TouchDesigner project.
+   - Connect your **TOP** containing the full image (to be split across projectors) to the input of the Multibeamer module.
+
+2. **Open the Multibeamer Parameters Window:**
    - Use the default hotkey `Ctrl+Shift+M` to open the parameters window.
 
-2. **Creating a Mapping Project:**
+3. **Creating a Mapping Project:**
    - Navigate to the **"New"** tab.
    - Enter the project name and specify the number of projectors used in your setup.
    - Click **Create**. A new folder will be generated in the `/mapping_settings` directory with all necessary configuration files. The message "Project is ready to use" will confirm the successful setup.
